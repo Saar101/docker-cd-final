@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run -d --name final-python-container -p 80:5000 eliranza/final-python
