@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+hooks:
+  BeforInstall:
+  - location: scripts/install_dependecies
+    timeout: 300
+    runas: root
+  - location: scripts/start_server
+    runsa: root
+    ApplicationStop:
+  - location: script/stop_server
+    timeout: 300
+    runas: root
